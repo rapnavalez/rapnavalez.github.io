@@ -1,0 +1,29 @@
+.alert {
+    transform: translateX(500px);
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background: var(--bg-alt);
+    padding: 20px;
+    z-index: 1000;
+    opacity: .9;
+    border-radius: 10px;
+    transition: all 1s;
+
+    span {
+        color: var(--text-alt);
+        font-size: 1rem;
+        margin-right: 10px;
+    }
+
+    i {
+        color: #198754;
+        font-size: 1rem;
+        margin-left: 10px;
+    }
+}
+
+.show-alert {
+    animation: show 4s forwards;
+}
+

@@ -1,0 +1,173 @@
+#contact {
+    background-color: var(--bg);
+    padding-top: 50px;
+    padding-bottom: 50px;
+    position: relative;
+
+
+    .contact-wrapper {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        gap: 20px;
+
+        @media (max-width: 767.98px) {
+            flex-direction: column;
+        }
+
+        .contact-info {
+            padding: 20px;
+            width: 50%;
+
+            @media (max-width: 767.98px) {
+                width: 100%;
+            }
+
+            i {
+                display: inline-block;
+                margin-right: 20px;
+                font-size: 2rem;
+                color: var(--text);
+
+                @media (max-width: 767.98px) {
+                    font-size: 1.5rem;
+                }
+            }
+
+            span {
+                display: inline-block;
+                font-size: 1.2rem;
+
+                @media (max-width: 767.98px) {
+                    font-size: 1rem;
+                }
+
+                a {
+                    text-decoration: none;
+                    color: var(--text);
+
+                }
+
+                address {
+                    font-style: normal;
+                    display: inline-block;
+                    color: var(--text);
+                }
+            }
+        }
+
+        .contact-form {
+            padding: 20px;
+            width: 50%;
+
+            @media (max-width: 767.98px) {
+                width: 100%;
+            }
+
+            form {
+                padding: 10px;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: center;
+
+                .input-wrapper {
+                    width: 100%;
+                    position: relative;
+                }
+
+                input, textarea, button {
+                    display: block;
+                    width: 100%;
+                    margin: 10px;
+                    font-family: 'Poppins';
+                    transition: all 0.2s;
+                }
+
+                .error {
+                    font-size: .6rem;
+                    color: #DC3545;
+                    font-weight: 400;
+                }
+
+                input,
+                textarea {
+                    height: 100%;
+                    font-size: .8rem;
+                    padding: 10px;
+                    padding-right: 40px;
+                    border-radius: 10px;
+                    border: none;
+                    box-shadow: 0 0 2px 0 var(--text);
+                    margin: 10px 0;
+                    color: #000;
+
+                    &:focus {
+                        outline: 2px solid var(--accent);
+                        background-color: rgb(236, 237, 244);
+                    }
+                }
+
+                .form-submit {
+                    border: none;
+                    cursor: pointer;
+                    margin: 0;
+
+                    &:disabled {
+                        cursor:not-allowed;
+                    }
+                }
+
+            }
+        }
+    }
+
+}
+
+.invalid-input {
+    background-color: rgba(#DC3545, .2);
+    box-shadow: 0 0 3px 0 rgba(#DC3545, .3) !important;
+    color: var(--text) !important;
+    
+    &::placeholder {
+        color: rgba(#DC3545, .6);
+        font-weight: 600;
+    }
+
+    &:focus {
+        outline: 2px solid rgba(#DC3545, .5) !important;
+        background-color: rgba(#DC3545, .3) !important;
+    }
+}
+
+.valid-input {
+    background-color: rgba(#198754, .2);
+    box-shadow: 0 0 3px 0 rgba(#198754, .3) !important;
+    color: var(--text) !important;
+
+    &::placeholder {
+        color: rgba(#198754, .6);
+        font-weight: 600;
+    }
+
+    &:focus {
+        outline: 2px solid rgba(#198754, .5) !important;
+        background-color: rgba(#198754, .3) !important;
+    }
+}
+
+.fa-circle-check, .fa-circle-xmark {
+    position: absolute;
+    right: 10px;
+    bottom: 22px;
+    font-size: 1rem;
+}
+
+.fa-circle-check {
+    color: #198754;
+}
+
+.fa-circle-xmark {
+    color: #DC3545;
+}
+

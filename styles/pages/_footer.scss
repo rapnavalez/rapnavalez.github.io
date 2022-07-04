@@ -1,0 +1,11 @@
+footer {
+    height: 80px;
+    background-color: var(--bg-alt);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    span {
+        color: var(--text-alt);
+    }
+}

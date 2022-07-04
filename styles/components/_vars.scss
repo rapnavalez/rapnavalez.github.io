@@ -1,0 +1,21 @@
+html {
+    --text: #1c2536;
+    --text-alt: #f4f1f7;
+    --bg: #f4f1f7;
+    --bg-alt : #0F1624;
+    --accent: #6978d1;
+    --gradient: linear-gradient(90deg, rgba(87, 37, 167, 1) 0%, rgba(105, 120, 209, 1) 30%, rgba(19, 173, 199, 1) 100%);
+}
+
+
+
+html[data-theme='dark'] {
+    --text: #f4f1f7;
+    --text-alt: #1c2536;
+    --bg: #0F1624;
+    --bg-alt: #f4f1f7;
+    --accent: #6978d1;
+    --gradient: linear-gradient(90deg, rgba(87, 37, 167, 1) 0%, rgba(105, 120, 209, 1) 30%, rgba(19, 173, 199, 1) 100%);
+}
+
+

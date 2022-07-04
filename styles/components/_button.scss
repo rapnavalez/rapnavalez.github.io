@@ -1,0 +1,22 @@
+.btn {
+    padding: 10px 40px;
+    border-radius: 50px;
+    text-decoration: none;
+    line-height: 1.6;
+    font-weight: 400;
+    font-size: 1rem;
+    color: #FFF;
+    background: rgb(19, 173, 199);
+    background: linear-gradient(90deg, rgba(19, 173, 199, 1) 0%, rgba(105, 120, 209, 1) 30%, rgba(87, 37, 167, 1) 100%);
+
+    &:hover {
+        background: linear-gradient(180deg, rgba(19, 173, 199, 1) 0%, rgba(105, 120, 209, 1) 30%, rgba(87, 37, 167, 1) 100%);
+    }
+
+    @media (max-width: 575.98px) {
+        padding: 8px 30px;
+        line-height: 1.4;
+        font-weight: 400;
+        font-size: .8rem;
+    }
+}
