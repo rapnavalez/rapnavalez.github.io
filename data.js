@@ -1,15 +1,15 @@
 const projects = [
     {
-        title: "Project 1",
-        img: "./images/image.png",
-        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem qui ea ratione, ullamnesciunt eius amet fugiat fugit in ut.",
+        title: "Simple Dynamic Chart",
+        img: "./images/dynamicchart.png",
+        desc: "This is a challenge from frontendmentor.io. It's a simple dynamic chart that fetch data from a JSON file.",
         language: [
             `<i class="fa-brands fa-html5"></i>`, 
-            `<i class="fa-brands fa-css3"></i>`, 
-            `<i class="fa-brands fa-react"></i>`, 
+            `<i class="fa-brands fa-sass"></i>`, , 
             `<i class="fa-brands fa-js"></i>`
         ],
-        link: "google.com"
+        link: "https://rapnavalez.github.io/expensechart.github.io/",
+        category: "challenge"
     },
     {
         title: "Project 2",

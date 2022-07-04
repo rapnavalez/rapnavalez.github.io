@@ -849,6 +849,7 @@ section {
 #portfolio .portfolio-wrapper .project-card {
   position: relative;
   max-width: 300px;
+  height: 330px;
   padding: 15px;
   border: 2px solid var(--text);
   border-radius: 15px;
@@ -900,11 +901,13 @@ section {
 #portfolio .portfolio-wrapper .project-card a .project-img {
   overflow: hidden;
   width: 100%;
+  height: 150px;
   border-radius: 5px;
 }
 
 #portfolio .portfolio-wrapper .project-card a .project-img img {
   width: 100%;
+  height: 100%;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
 }
@@ -1229,6 +1232,10 @@ footer span {
 
 .fa-js {
   color: #f0db4f;
+}
+
+.fa-sass {
+  color: #CD6799;
 }
 
 .title {
