@@ -70,7 +70,7 @@ projects.forEach(project => {
     portfolioWrapper.innerHTML += `
 
         <li class="project-card">
-            <a href="/" target="_blank">
+            <a href=${project.link} target="_blank">
                 <div class="project-img">
                     <img src=${project.img} alt="">
                 </div>
