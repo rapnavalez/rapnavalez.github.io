@@ -163,7 +163,7 @@ inputs.forEach((input,index) => {
             let entry = e.target.value
             let validation;
             let err;
-            const conditions = [entry.length >= 5,
+            const conditions = [entry.length >= 4,
                 /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(e.target.value),
                 entry.length >= 10]
             switch (e.target.name) {
@@ -196,7 +196,7 @@ inputs.forEach((input,index) => {
 
                 switch (e.target.name) {
                     case "name":
-                        err = "*Please enter at least 5 letters."
+                        err = "*Please enter at least 4 characters."
                         errors[0].innerHTML = err
                         break;
                     case "email":
@@ -225,7 +225,7 @@ inputs.forEach((input,index) => {
             let entry = e.target.value
             let validation;
             let err;
-            const conditions = [entry.length >= 5,
+            const conditions = [entry.length >= 4,
                 /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(e.target.value),
                 entry.length >= 10]
             switch (e.target.name) {
@@ -258,7 +258,7 @@ inputs.forEach((input,index) => {
 
                 switch (e.target.name) {
                     case "name":
-                        err = "*Please enter at least 5 letters."
+                        err = "*Please enter at least 4 characters."
                         errors[0].innerHTML = err
                         break;
                     case "email":

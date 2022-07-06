@@ -8,6 +8,8 @@ body {
     font-family: 'Poppins', Arial, Helvetica, sans-serif;
     background-color: var(--bg);
     hyphens: auto;
+    // max-width: 1440px;
+    margin: 0 auto;
 }
 
 .location-tracker {
@@ -22,6 +24,7 @@ body {
 
 html {
     scroll-behavior: smooth;
+    position: relative;
 
     ::-webkit-scrollbar {
         display: none;
