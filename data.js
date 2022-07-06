@@ -2,7 +2,7 @@ const projects = [
     {
         title: "Simple Dynamic Chart",
         img: "./images/dynamicchart.png",
-        desc: "This is a challenge from frontendmentor.io. It's a simple dynamic chart that fetch data from a JSON file.",
+        desc: "This is a challenge from frontendmentor.io. It's a simple dynamic chart that fetch data from a JSON file. The design and information on the chart is generated from the JSON file.",
         language: [
             `<i class="fa-brands fa-html5"></i>`, 
             `<i class="fa-brands fa-sass"></i>`, , 
@@ -12,15 +12,15 @@ const projects = [
         category: "challenge"
     },
     {
-        title: "Project 2",
-        img: "./images/image.png",
-        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem qui ea ratione, ullamnesciunt eius amet fugiat fugit in ut.",
+        title: "Calculator App",
+        img: "./images/calculatorapp.png",
+        desc: "This is a challenge from frontendmentor.io. It's a simple calculator app that has simple calculator functions. You also have 3 themes to select with!",
         language: [
             `<i class="fa-brands fa-html5"></i>`, 
-            `<i class="fa-brands fa-react"></i>`, 
+            `<i class="fa-brands fa-sass"></i>`, 
             `<i class="fa-brands fa-js"></i>`
         ],
-        link: "google.com"
+        link: "https://rapnavalez.github.io/calculatorchallenge/"
     },
     {
         title: "Project 3",

@@ -849,13 +849,26 @@ section {
 #portfolio .portfolio-wrapper .project-card {
   position: relative;
   max-width: 300px;
-  height: 330px;
-  padding: 15px;
+  min-height: 400px;
+  padding: 10px 15px;
   border: 2px solid var(--text);
   border-radius: 15px;
   text-align: center;
   background-color: var(--bg);
   text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   cursor: pointer;
 }
 
@@ -913,6 +926,7 @@ section {
 }
 
 #portfolio .portfolio-wrapper .project-card a .project-title {
+  margin: 10px 0;
   font-size: 1.2rem;
   font-weight: 600;
   line-height: 1.6;
