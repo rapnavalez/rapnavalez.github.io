@@ -24,7 +24,7 @@ const projects = [
     },
     {
         title: "E-commerce Product Page",
-        img: "./images/ecommproductpage",
+        img: "./images/ecommproductpage.png",
         desc: "A simple e-commerce product page where in you can add, view, and delete items from your cart. It also has a lightbox feature to view the product!",
         language: [
             `<i class="fa-brands fa-html5"></i>`, 
@@ -32,7 +32,7 @@ const projects = [
             `<i class="fa-brands fa-react"></i>`, 
             `<i class="fa-brands fa-js"></i>`
         ],
-        link: "https://rapnavalez.github.io/ecommerceproductpage/"
+        link: "https://rapnavalez.github.io/ecommerceproductpage/build"
     },
     {
         title: "Project 4",
