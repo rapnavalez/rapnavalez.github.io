@@ -23,15 +23,16 @@ const projects = [
         link: "https://rapnavalez.github.io/calculatorchallenge/"
     },
     {
-        title: "Project 3",
-        img: "./images/image.png",
-        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem qui ea ratione, ullamnesciunt eius amet fugiat fugit in ut.",
+        title: "E-commerce Product Page",
+        img: "./images/ecommproductpage",
+        desc: "A simple e-commerce product page where in you can add, view, and delete items from your cart. It also has a lightbox feature to view the product!",
         language: [
             `<i class="fa-brands fa-html5"></i>`, 
+            `<i class="fa-brands fa-sass"></i>`, 
             `<i class="fa-brands fa-react"></i>`, 
             `<i class="fa-brands fa-js"></i>`
         ],
-        link: "google.com"
+        link: "https://rapnavalez.github.io/ecommerceproductpage/"
     },
     {
         title: "Project 4",
