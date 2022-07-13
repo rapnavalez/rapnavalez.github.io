@@ -285,15 +285,17 @@ header .wrapper .burger {
   z-index: 999;
 }
 
-header .wrapper .burger .line1, header .wrapper .burger .line2, header .wrapper .burger .line3 {
+header .wrapper .burger .line1,
+header .wrapper .burger .line2,
+header .wrapper .burger .line3 {
   height: 3.5px;
   width: 35px;
   border-radius: 10px;
   background-color: var(--text);
-  opacity: .6;
+  opacity: 0.6;
   margin: 3.5px 0;
-  -webkit-transition: all .2s;
-  transition: all .2s;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
 }
 
 @media (max-width: 767.98px) {
@@ -396,7 +398,7 @@ header .wrapper nav li a {
 }
 
 header .wrapper nav li a::after {
-  content: "";
+  content: '';
   position: absolute;
   left: 0;
   right: 0;
@@ -447,15 +449,17 @@ header .wrapper .dark-mode-wrapper {
   cursor: pointer;
 }
 
-header .wrapper .dark-mode-wrapper span {
+header .wrapper .dark-mode-wrapper .light-label,
+header .wrapper .dark-mode-wrapper .dark-label {
   margin: 0 5px;
   color: var(--text);
-  font-size: .8rem;
+  font-size: 0.8rem;
   font-weight: 600;
 }
 
 @media (max-width: 800.98px) {
-  header .wrapper .dark-mode-wrapper span {
+  header .wrapper .dark-mode-wrapper .light-label,
+  header .wrapper .dark-mode-wrapper .dark-label {
     display: none;
   }
 }
@@ -467,7 +471,7 @@ header .wrapper .dark-mode-wrapper span {
   background-color: var(--bg);
 }
 
-input[type="checkbox"].dark-mode-switch {
+input[type='checkbox'].dark-mode-switch {
   font-size: 16px;
   -webkit-appearance: none;
      -moz-appearance: none;
@@ -483,13 +487,13 @@ input[type="checkbox"].dark-mode-switch {
   transition: all 0.2s;
 }
 
-input[type="checkbox"].dark-mode-switch:checked {
+input[type='checkbox'].dark-mode-switch:checked {
   background: var(--accent);
 }
 
-input[type="checkbox"].dark-mode-switch:after {
+input[type='checkbox'].dark-mode-switch:after {
   position: absolute;
-  content: "";
+  content: '';
   width: 1.5rem;
   height: 1.5rem;
   border-radius: 50%;
@@ -503,7 +507,7 @@ input[type="checkbox"].dark-mode-switch:after {
   transition: all 0.2s;
 }
 
-input[type="checkbox"].dark-mode-switch:checked:after {
+input[type='checkbox'].dark-mode-switch:checked:after {
   left: calc(100% - 1.5rem);
 }
 
@@ -523,18 +527,18 @@ input[type="checkbox"].dark-mode-switch:checked:after {
 section {
   width: 100%;
   margin: 0 auto;
-  padding: 0 20%;
+  padding: 60px 20% 0;
 }
 
 @media (max-width: 767.98px) {
   section {
-    padding: 0 5%;
+    padding: 60px 5% 0;
   }
 }
 
 @media (max-width: 1439.99px) {
   section {
-    padding: 0 10%;
+    padding: 60px 10% 0;
   }
 }
 
@@ -731,7 +735,7 @@ section {
 }
 
 #about .about-wrapper .about-left .about-left-skills .skill .skill-bar {
-  height: .9rem;
+  height: 0.9rem;
   width: 100%;
   border-radius: 50px;
   overflow: hidden;
@@ -740,7 +744,7 @@ section {
 #about .about-wrapper .about-left .about-left-skills .skill .skill-bar .skill-bar-outer {
   height: 100%;
   width: 100%;
-  background-color: #FFF;
+  background-color: #fff;
   -webkit-box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.6) inset;
           box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.6) inset;
 }
@@ -790,8 +794,12 @@ section {
 
 @media (max-width: 767.98px) {
   #about .about-wrapper .about-right p {
-    font-size: .9rem;
+    font-size: 0.9rem;
   }
+}
+
+#about .about-wrapper .about-right p a {
+  color: var(--accent);
 }
 
 #about .about-wrapper .about-right a {
@@ -937,7 +945,6 @@ section {
 
 #contact {
   background-color: var(--bg);
-  padding-top: 50px;
   padding-bottom: 100px;
   position: relative;
 }
@@ -965,8 +972,8 @@ section {
 }
 
 #contact .contact-wrapper .contact-info {
-  padding: 20px;
   width: 50%;
+  padding: 20px;
 }
 
 @media (max-width: 767.98px) {
@@ -1062,7 +1069,9 @@ section {
   position: relative;
 }
 
-#contact .contact-wrapper .contact-form form input, #contact .contact-wrapper .contact-form form textarea, #contact .contact-wrapper .contact-form form button {
+#contact .contact-wrapper .contact-form form input,
+#contact .contact-wrapper .contact-form form textarea,
+#contact .contact-wrapper .contact-form form button {
   display: block;
   width: 100%;
   margin: 10px;
@@ -1072,15 +1081,15 @@ section {
 }
 
 #contact .contact-wrapper .contact-form form .error {
-  font-size: .6rem;
-  color: #DC3545;
+  font-size: 0.6rem;
+  color: #dc3545;
   font-weight: 400;
 }
 
 #contact .contact-wrapper .contact-form form input,
 #contact .contact-wrapper .contact-form form textarea {
   height: 100%;
-  font-size: .8rem;
+  font-size: 0.8rem;
   padding: 10px;
   padding-right: 40px;
   border-radius: 10px;
@@ -1171,7 +1180,9 @@ section {
   background-color: rgba(25, 135, 84, 0.3) !important;
 }
 
-.fa-circle-check, .fa-circle-xmark, .check-icon {
+.fa-circle-check,
+.fa-circle-xmark,
+.check-icon {
   position: absolute;
   right: 10px;
   bottom: 22px;
@@ -1183,7 +1194,7 @@ section {
 }
 
 .fa-circle-xmark {
-  color: #DC3545;
+  color: #dc3545;
 }
 
 footer {

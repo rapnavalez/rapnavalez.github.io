@@ -1,17 +1,14 @@
-
-
-
 @import './components/vars';
 @import './components/button';
 @import './components/resets';
 @import './components/animation';
-@import './pages/header';
-@import './pages/sections';
-@import './pages/hero';
-@import './pages/about';
-@import './pages/portfolio';
-@import './pages/contact';
-@import './pages/footer';
+@import './sections/header';
+@import './sections/sections';
+@import './sections/hero';
+@import './sections/about';
+@import './sections/portfolio';
+@import './sections/contact';
+@import './sections/footer';
 @import './components/alert';
 @import './components/icons';
 @import './components/titles';

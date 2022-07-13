@@ -46,17 +46,6 @@ const projects = [
     ],
     link: 'https://rapnavalez.github.io/todowithatwist/build/',
   },
-  {
-    title: 'Project 5',
-    img: './images/image.png',
-    desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem qui ea ratione, ullamnesciunt eius amet fugiat fugit in ut.',
-    language: [
-      `<i class="fa-brands fa-html5"></i>`,
-      `<i class="fa-brands fa-css3"></i>`,
-      `<i class="fa-brands fa-node"></i>`,
-    ],
-    link: 'google.com',
-  },
 ];
 
 const portfolioWrapper = document.querySelector('.portfolio-wrapper');
