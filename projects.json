@@ -1,0 +1,47 @@
+[
+  {
+    "title": "Simple Dynamic Chart",
+    "img": "./images/dynamicchart.png",
+    "desc": "This is a challenge from frontendmentor.io. It's a simple dynamic chart that fetch data from a JSON file. The design and information on the chart is generated from the JSON file.",
+    "language": [
+      "<i class='fa-brands fa-html5'></i>",
+      "<i class='fa-brands fa-sass'></i>",
+      "<i class='fa-brands fa-js'></i>"
+    ],
+    "link": "https://rapnavalez.github.io/expensechart.github.io/",
+    "category": "challenge"
+  },
+  {
+    "title": "Calculator App",
+    "img": "./images/calculatorapp.png",
+    "desc": "This is a challenge from frontendmentor.io. It's a simple calculator app that has simple calculator functions. You also have 3 themes to select with!",
+    "language": [
+      "<i class='fa-brands fa-html5'></i>",
+      "<i class='fa-brands fa-sass'></i>",
+      "<i class='fa-brands fa-js'></i>"
+    ],
+    "link": "https://rapnavalez.github.io/calculatorchallenge/"
+  },
+  {
+    "title": "E-commerce Product Page",
+    "img": "./images/ecommproductpage.png",
+    "desc": "A simple e-commerce product page where in you can add, view, and delete items from your cart. It also has a lightbox feature to view the product!",
+    "language": [
+      "<i class='fa-brands fa-html5'></i>",
+      "<i class='fa-brands fa-sass'></i>",
+      "<i class='fa-brands fa-react'></i>"
+    ],
+    "link": "https://rapnavalez.github.io/ecommerceproductpage/build"
+  },
+  {
+    "title": "Drag & Drop Todo",
+    "img": "./images/todoapp.png",
+    "desc": "An intermidiate challenge from frontendmentor.io. This is a todo app with a twist! You can create, read, update, delete Todos. All are saved in local storage.",
+    "language": [
+      "<i class='fa-brands fa-html5'></i>",
+      "<i class='fa-brands fa-sass'></i>",
+      "<i class='fa-brands fa-react'></i>"
+    ],
+    "link": "https://rapnavalez.github.io/todowithatwist/build/"
+  }
+]

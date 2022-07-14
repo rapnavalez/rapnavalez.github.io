@@ -124,16 +124,16 @@ window.addEventListener('scroll', () => {
   });
 
   //Tech Stack rating
-  const skillRating = [80, 80, 50, 30, 30];
-  if (about.classList.contains('active')) {
-    skillBar.forEach((skill, index) => {
-      skill.style.width = `${skillRating[index]}%`;
-    });
-  } else {
-    skillBar.forEach((skill, index) => {
-      skill.style.width = '0%';
-    });
-  }
+  // const skillRating = [80, 80, 50, 30, 30];
+  // if (about.classList.contains('active')) {
+  //   skillBar.forEach((skill, index) => {
+  //     skill.style.width = `${skillRating[index]}%`;
+  //   });
+  // } else {
+  //   skillBar.forEach((skill, index) => {
+  //     skill.style.width = '0%';
+  //   });
+  // }
 
   //Tracker script (Top scrollbar)
 
@@ -322,3 +322,71 @@ const sendEmail = () => {
     }, 5000)
   );
 };
+
+// -------------------------End of Send email----------------------------------
+
+//---------------------------Portfolio--------------------------------------------
+
+const fetchProject = async () => {
+  const response = await fetch('./projects.json');
+  const projects = await response.json();
+  return projects;
+};
+
+const portfolioWrapper = document.querySelector('.portfolio-wrapper');
+
+fetchProject().then((projects) => {
+  projects.forEach((project) => {
+    portfolioWrapper.innerHTML += `
+
+        <li class="project-card">
+            <a href=${project.link} target="_blank">
+                <div class="project-img">
+                    <img src=${project.img} alt="">
+                </div>
+                <div class="project-title">${project.title}</div>
+                <div class="project-desc">${project.desc}</div>
+                <div class="project-technology">
+                    ${project.language.join('')}
+                </div>
+                <div class="view-now">
+                    <i class="fa-solid fa-eye"></i>
+                </div>
+            </a>
+        </li>
+    `;
+  });
+});
+
+//-----------------------------------end of portfolio---------------------------------------
+
+//--------------------------------Skils data --------------------------------------------
+
+const fetchSkills = async () => {
+  const response = await fetch('./skills.json');
+  const skills = response.json();
+  return skills;
+};
+
+const skillsCont = document.querySelector('.about-left-skills');
+
+fetchSkills().then((skills) => {
+  skills.forEach((skill) => {
+    skillsCont.innerHTML += `
+    
+        <li class="skill">
+          <div class="skill-title-rating">
+            <h4>${skill.name}</h4>
+            <h4>${skill.rating}</h4>
+          </div>
+          <div class="skill-bar">
+            <div class="skill-bar-outer">
+              <div class="skill-bar-inner" style="width: ${skill.ratingBar}%"></div>
+            </div>
+          </div>
+        </li>
+    
+    
+    `;
+  });
+});

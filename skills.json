@@ -1,0 +1,27 @@
+[
+  {
+    "name": "Html",
+    "rating": "Advanced",
+    "ratingBar": 70
+  },
+  {
+    "name": "Sass",
+    "rating": "Advanced",
+    "ratingBar": 70
+  },
+  {
+    "name": "JavaScript",
+    "rating": "Intermidiate",
+    "ratingBar": 50
+  },
+  {
+    "name": "ReactJs",
+    "rating": "Intermidiate",
+    "ratingBar": 50
+  },
+  {
+    "name": "NodeJs",
+    "rating": "Entry Level",
+    "ratingBar": 30
+  }
+]

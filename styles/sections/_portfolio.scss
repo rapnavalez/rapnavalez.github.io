@@ -1,105 +1,104 @@
 #portfolio {
-    background-color: var(--bg);
+  background-color: var(--bg);
 
-    @media (max-width: 767.98px) {
-        text-align: center;
+  @media (max-width: 767.98px) {
+    text-align: center;
+  }
+
+  .portfolio-wrapper {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 0;
+    gap: 20px;
+    flex-wrap: wrap;
+    list-style: none;
+
+    .project-card {
+      position: relative;
+      max-width: 300px;
+      min-height: 400px;
+      padding: 10px 15px;
+      border: 2px solid var(--text);
+      border-radius: 15px;
+      text-align: center;
+      background-color: var(--bg);
+      text-decoration: none;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+
+      &:hover .view-now {
+        opacity: 1;
+      }
+
+      &:hover img {
+        transform: scale(1.2);
+      }
+
+      a {
+        text-decoration: none;
+
+        .view-now {
+          opacity: 0;
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          transition: all 0.2s;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          i {
+            font-size: 4rem;
+            color: var(--accent);
+            opacity: 0.6;
+          }
+        }
+
+        .project-img {
+          overflow: hidden;
+          width: 100%;
+          height: 150px;
+          border-radius: 5px;
+
+          img {
+            width: 100%;
+            height: 100%;
+            transition: all 0.2s;
+          }
+        }
+
+        .project-title {
+          margin: 10px 0;
+          font-size: 1.2rem;
+          font-weight: 600;
+          line-height: 1.6;
+          color: var(--text);
+        }
+
+        .project-desc {
+          font-size: 0.7rem;
+          font-weight: 400;
+          line-height: 1.6;
+          color: var(--text);
+          text-align: justify;
+        }
+
+        .project-technology {
+          margin: 20px 0;
+
+          i {
+            font-size: 1.5rem;
+            margin: 0 10px;
+          }
+        }
+      }
     }
-
-    .portfolio-wrapper {
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 20px;
-        flex-wrap: wrap;
-        list-style: none;
-
-            .project-card {
-                position: relative;
-                max-width: 300px;
-                min-height: 400px;
-                padding: 10px 15px;
-                border: 2px solid var(--text);
-                border-radius: 15px;
-                text-align: center;
-                background-color: var(--bg);
-                text-decoration: none;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                justify-content: center;
-                cursor: pointer;
-    
-                &:hover .view-now {
-                    opacity: 1;
-                }
-
-                &:hover img {
-                    transform: scale(1.2);
-                }
-
-                a {
-                    text-decoration: none;
-
-        
-                    .view-now {
-                        opacity: 0;
-                        position: absolute;
-                        top: 0;
-                        bottom: 0;
-                        left: 0;
-                        right: 0;
-                        transition: all 0.2s;
-                        display: flex;
-                        align-items: center;
-                        justify-content: center;
-            
-                        i {
-                            font-size: 4rem;
-                            color: var(--accent);
-                            opacity: .6;
-                        }
-
-                    }
-            
-                    .project-img {
-                        overflow: hidden;
-                        width: 100%;
-                        height: 150px;
-                        border-radius: 5px;
-            
-                        img {
-                            width: 100%;
-                            height: 100%;
-                            transition: all 0.2s;
-                        }
-                    }
-            
-                    .project-title {
-                        margin: 10px 0;
-                        font-size: 1.2rem;
-                        font-weight: 600;
-                        line-height: 1.6;
-                        color: var(--text);
-                    }
-            
-                    .project-desc {
-                        font-size: .7rem;
-                        font-weight: 400;
-                        line-height: 1.6;
-                        color: var(--text);
-                        text-align: justify;
-                    }
-            
-                    .project-technology {
-                        margin: 20px 0;
-            
-                        i {
-                            font-size: 1.5rem;
-                            margin: 0 10px;
-                        }
-                    }
-                }
-            }
-    }
+  }
 }
