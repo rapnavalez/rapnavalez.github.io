@@ -43,5 +43,16 @@
       "<i class='fa-brands fa-react'></i>"
     ],
     "link": "https://rapnavalez.github.io/todowithatwist/build/"
+  },
+  {
+    "title": "IP Address Tracker",
+    "img": "./images/ipaddresstracker.png",
+    "desc": "An intermidiate challenge from frontendmentor.io. This is an IP address or domain name tracker. After entering an IP address or domain, the app will return the location, timezome, and ISP.",
+    "language": [
+      "<i class='fa-brands fa-html5'></i>",
+      "<i class='fa-brands fa-sass'></i>",
+      "<i class='fa-brands fa-react'></i>"
+    ],
+    "link": "https://rapnavalez.github.io/ipaddresstracker/build/"
   }
 ]
