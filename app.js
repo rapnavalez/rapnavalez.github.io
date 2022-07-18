@@ -296,7 +296,7 @@ const senderEmail = document.querySelector('.email');
 const senderMessage = document.querySelector('.message');
 const alert = document.querySelector('.alert');
 const alertMessage = document.querySelector('.alert-message');
-// require('dotenv').config();
+require('dotenv').config();
 
 const sendEmail = () => {
   sendBtn.innerHTML = 'Sending...';
