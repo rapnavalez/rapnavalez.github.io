@@ -278,6 +278,12 @@ header .wrapper {
   }
 }
 
+@media (max-width: 400px) {
+  header .wrapper {
+    padding: 30px 20px;
+  }
+}
+
 header .wrapper .burger {
   display: none;
   -webkit-box-orient: vertical;
@@ -538,15 +544,21 @@ section {
   padding: 60px 20% 0;
 }
 
+@media (max-width: 1439.99px) {
+  section {
+    padding: 60px 10% 0;
+  }
+}
+
 @media (max-width: 767.98px) {
   section {
     padding: 60px 5% 0;
   }
 }
 
-@media (max-width: 1439.99px) {
+@media (max-width: 400px) {
   section {
-    padding: 60px 10% 0;
+    padding: 60px 20px 0;
   }
 }
 
@@ -986,6 +998,7 @@ section {
 @media (max-width: 767.98px) {
   #contact .contact-wrapper .contact-info {
     width: 100%;
+    padding: 0;
   }
 }
 
@@ -1044,6 +1057,7 @@ section {
 @media (max-width: 767.98px) {
   #contact .contact-wrapper .contact-form {
     width: 100%;
+    padding: 0;
   }
 }
 

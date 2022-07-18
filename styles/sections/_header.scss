@@ -20,6 +20,10 @@ header {
       padding: 30px 5%;
     }
 
+    @media (max-width: 400px) {
+      padding: 30px 20px;
+    }
+
     .burger {
       display: none;
       flex-direction: column;
