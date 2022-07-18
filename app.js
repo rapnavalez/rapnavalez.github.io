@@ -296,13 +296,12 @@ const senderEmail = document.querySelector('.email');
 const senderMessage = document.querySelector('.message');
 const alert = document.querySelector('.alert');
 const alertMessage = document.querySelector('.alert-message');
-
-let i = 0.9;
+// require('dotenv').config();
 
 const sendEmail = () => {
   sendBtn.innerHTML = 'Sending...';
   Email.send({
-    SecureToken: '38b5f125-d1a8-4c3f-8200-b93bf93f722f',
+    SecureToken: process.env.SECURE_TOKEN,
     To: 'rapwebdev@gmail.com',
     From: 'rapwebdev@gmail.com',
     Subject: 'EMAIL FROM YOUR WEBSITE',
